@@ -1,0 +1,61 @@
+// main: ./../main.less
+.footer {
+}
+.footer-top {
+    min-height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 30px;
+        max-width: 130px;
+        @media (max-width: 520px) {
+            margin-right: 20px;
+            text-align: center;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        .textStyle('NimbusBold', 1.9em, 19px, #7b7b7b);
+        transition: 0.3s ease;
+        @media (max-width: 520px) {
+            text-align: center;
+        }
+        &:hover{
+            color: #8dc705;
+        }
+        &:focus {
+            outline-color: #8dc705;
+            color: #8dc705;
+        }
+    }
+}
+.footer-bottom {
+    min-height: 65px;
+    background-color: #e4e4e4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px;
+    @media (max-width: 767px) {
+        padding: 0 15px;
+    }
+    @media (max-width: 480px) {
+        justify-content: center;
+    }
+    &__rights,
+    &__dev {
+        .textStyle('HelveticaRegular', 1.2em, 20px, #919191);
+        min-width: 225px;
+    }
+}

@@ -1,0 +1,23 @@
+// main: ./../main.less
+.content {
+    background-color: #26311c;
+    opacity: 0.7;
+    border-radius: 5px;
+    padding: 29px 46px 35px 44px;
+    @media (max-width: 499px) {
+        padding: 15px 20px 15px 20px;
+    }
+    &__title {
+        .textStyle('HelveticaLight', 3.4em, 1.2, @colorTextLight);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        .textStyle('HelveticaRegular', 1.4em, 1.8, @colorTextWhite);
+        max-width: 880px;
+        @media (max-width: 767px) {
+            font-size: 1.5em;
+        }
+    }
+}

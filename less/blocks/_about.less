@@ -1,0 +1,56 @@
+// main: ./../main.less
+
+.about { 
+    background-image: url(../../assets/images/benefitsBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+        padding: 10px 15px;
+    }
+    &__container {
+        padding-left: 160px;
+        @media (max-width: 767px) {
+            padding: 30px;
+            background-color: white;
+            opacity: 0.7;
+            border-radius: 5px;
+            margin: 0 auto;
+        }
+    }
+    &__title {
+        .textStyle('HelveticaLight', 3.4em, 53px, @colorTextDark);
+        max-width: 210px;
+        margin-bottom: 30px;
+    }
+    &__title--green {
+        .textStyle('HelveticaBold', 54px, 53px, #48890a);
+    }
+    &__text {
+        .textStyle('HelveticaRegular', 1.4em, 25px, @colorTextDark);
+        max-width: 440px;
+        margin-bottom: 25px;
+        @media (max-width: 767px) {
+            font-size: 1.5em;
+        }
+    }
+    &__btn {
+        border: @borderBtnActive;
+        color: @textActive;
+        &:hover {
+            border: solid 2px #26311c;
+            color: #26311c;
+        }
+        &:focus-visible {
+            border: solid 2px #26311c;
+            color: #26311c;
+        }
+        &:focus {
+            border: solid 2px #26311c;
+            color: #26311c;
+        }
+    }
+}

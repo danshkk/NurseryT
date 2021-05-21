@@ -1,0 +1,40 @@
+// main: ./../main.less
+.startPage {
+    background-image: url(../../assets/images/startBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 870px;
+    width: 100%;
+    padding-top: 20px;
+    border-bottom: 4px solid @menuClolor;
+    @media (max-width: 976px) {
+        padding: 20px 15px 0 15px;
+    }
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__logo {
+        width: 100%;
+        z-index: 2;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        .textStyle('HelveticaBlack', 6.8em, 1, @colorTextLight);
+        max-width: 760px;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 0 0 6px rgba(31, 88, 0, 0.75);
+        @media (max-width: 767px) {
+            font-size: 5.0em;
+        }
+    }
+    &__content {
+
+    }
+}

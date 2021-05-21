@@ -1,0 +1,64 @@
+// out: ../css/main.min.css, compress: true, sourceMap: true
+
+// FONTS 
+
+// COMMON STYLES
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'HelveticaRegular';
+    font-size: 10px;
+    min-width: 360px;
+}
+body._lock {
+    overflow: hidden;
+}
+.btn {
+    .textStyle('NimbusBold', 1.9em, 2.5, @colorTextWhite);
+    display: inline-block; 
+    width: 164px;
+    height: 56px;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: @borderBtnRadius;
+    border: @borderBtn;
+    background-color: transparent;
+    transition: 0.3s ease;
+    outline-color: @activeColor;
+        &:hover {
+            border: @borderBtnActive;
+            color: @textActive;
+        }
+        &:focus {
+            border: @borderBtnActive;
+            color: @textActive;
+        }
+        &:focus-visible {
+            border: @borderBtnActive;
+            color: @textActive;
+        }
+}
+.header {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+
+@import './_fonts.less';
+@import './_mixins.less';
+@import './_vars.less';
+@import './blocks/_startPage.less';
+@import './blocks/_menu.less';
+@import './blocks/_content.less';
+@import './blocks/_features.less';
+@import './blocks/_about.less';
+@import './blocks/_footer.less';
